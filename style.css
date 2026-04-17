@@ -1,7 +1,9 @@
 body{
+    font-size: 1rem;
     background-color: black;
 }
 
+/* Body */
 header{
     background-color: rgb(0 255 255);
     text-align: center;
@@ -15,3 +17,5 @@ footer{
     background-color: rgb(80, 80, 80);
     color: gray;
 }
+
+/* Elements */
