@@ -19,5 +19,6 @@ footer{
 
 /* Elements */
 #serwersInfo{
-    border: 1rem;
+    border: 1;
+    border-color: grey;
 }
