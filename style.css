@@ -20,5 +20,8 @@ footer{
 /* Elements */
 #serwersInfo{
     border: 1;
-    border-color: grey;
+    border-top-color: grey;
+    border-bottom-color: gray;
+    border-left-color: gray;
+    border-right-color: gray
 }
