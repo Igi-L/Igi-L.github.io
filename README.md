@@ -1,1 +1,1 @@
-This is a test website. I made it to test some stuff and prank friends.
+This is a test website. I made it to test some stuff and prank friends, and also to have a info board for my friends.
