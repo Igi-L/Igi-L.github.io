@@ -19,6 +19,9 @@ footer{
 
 /* Elements */
 #serwersInfo{
+    margin: 10px;
+    
     border: 1px;
     border-spacing: 5px;
+
 }
