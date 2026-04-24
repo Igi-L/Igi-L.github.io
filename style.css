@@ -19,9 +19,6 @@ footer{
 
 /* Elements */
 #serwersInfo{
-    border: 1;
-    border-top-color: grey;
-    border-bottom-color: gray;
-    border-left-color: gray;
-    border-right-color: gray
+    border: 1px;
+    border-spacing: 5px;
 }
