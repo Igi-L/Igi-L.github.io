@@ -6,15 +6,16 @@ body{
 
 /* Body */
 header{
+    position: relative;
     background-color: rgb(0 255 255);
     text-align: center;
     font-size: clamp(1rem, 2rem, 4rem);
     width: 100%;
+    
 }
 
 article{
     color: gray;
-    position: relative;
 }
 
 footer{
@@ -42,14 +43,44 @@ th{
 button{
     color: black;
     background-color: white;
-    height: auto;
-    width: 8rem;
-    position: absolute;
-    left: 50%;
-    translate: -50%;
+    padding: 5px;
+    bottom: 1rem;
+    position: relative;
     transition: 1s;
 }
 
 button:hover{
     background-color: red;
+}
+
+/*Classes*/
+.rgb {
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #8000ff,
+        #ff0000
+    );
+
+    background-size: 400%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: rgbFlow 10s linear infinite;
+}
+
+@keyframes rgbFlow {
+    0% { background-position: 0%; }
+    100% { background-position: 400%; }
 }
