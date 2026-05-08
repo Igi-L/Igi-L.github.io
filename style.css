@@ -44,6 +44,7 @@ th{
 }
 
 button{
+    font-size: clamp(.5rem, 1rem, 1.5rem);
     color: black;
     background-color: white;
     padding: 5px;
