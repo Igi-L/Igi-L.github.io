@@ -11,7 +11,7 @@ function playWhatMeme(){
   what.play();
 }
 
-function stopAll(){ //TODO: fin a way to silence all audio without puting multiple audios.pause() here
+function stopAll(){ //TODO: find a way to silence all audio without puting multiple audios.pause() here
   rickRoll.pause()
   what.pause()
 }
