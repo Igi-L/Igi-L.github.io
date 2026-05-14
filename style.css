@@ -2,6 +2,7 @@ body{
     font-family: 'Google Sans','Open Sans','sans-serif';
     font-size: clamp(1.5rem, 1.8rem, 2rem);
     background-color: black;
+    margin: 0;
 }
 
 /* Body */
@@ -10,8 +11,6 @@ header{
     background-color: rgb(0 255 255);
     text-align: center;
     font-size: clamp(1rem, 2rem, 4rem);
-    width: 100%;
-    
 }
 
 article{
@@ -33,16 +32,6 @@ th{
     color: yellow;
 }
 
-#serwersInfo{
-    margin: 10px;
-    width: 80%;
-    position: relative;
-    left: 50%;
-    translate: -50%;
-    border: 1px;
-    border-spacing: 5px;
-}
-
 button{
     font-size: clamp(.5rem, 1rem, 1.5rem);
     color: black;
@@ -57,8 +46,46 @@ button:hover{
     background-color: red;
 }
 
+/*Ids*/
+#serwersInfo{
+    margin: 10px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    border: 1px;
+    border-spacing: 5px;
+}
+
 /*Classes*/
-.rgb {
+.navBar{
+    background-color: #808080;
+}
+
+.navBar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navBar a{
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+}
+
+.navBar a:hover{
+    background-color: #696969;
+}
+
+.navBar li{
+    float: left;
+}
+
+.rgb{
     font-weight: bold;
 
     background: linear-gradient(
@@ -81,10 +108,10 @@ button:hover{
     color: transparent;
     -webkit-text-fill-color: transparent;
 
-    animation: rgbFlow 10s linear infinite;
+    animation: rgb 10s linear infinite;
 }
 
-@keyframes rgbFlow {
+@keyframes rgb{
     0% { background-position: 0%; }
     100% { background-position: 400%; }
 }
