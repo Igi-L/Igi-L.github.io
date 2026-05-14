@@ -82,7 +82,7 @@ button:hover{
 }
 
 .navBar li{
-    float: left;
+    display: inline-block;
 }
 
 .rgb{
