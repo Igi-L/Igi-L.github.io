@@ -1,6 +1,6 @@
 body{
     font-family: 'Google Sans','Open Sans','sans-serif';
-    font-size: clamp(1.5rem, 1.8rem, 2rem);
+    font-size: clamp(1rem, 2rem, 4rem);
     background-color: black;
     margin: 0;
 }
@@ -10,11 +10,12 @@ header{
     position: relative;
     background-color: rgb(0 255 255);
     text-align: center;
-    font-size: clamp(1rem, 2rem, 4rem);
+    font-size: clamp(2rem, 3rem, 4rem);
 }
 
 article{
     color: gray;
+    view-transition-name: page-content;
 }
 
 footer{
@@ -60,6 +61,7 @@ button:hover{
 /*Classes*/
 .navBar{
     background-color: #808080;
+    clamp(1rem, 2rem, 4rem)
 }
 
 .navBar ul{
@@ -85,7 +87,9 @@ button:hover{
     display: inline-block;
 }
 
+/*Anim*/
 .rgb{
+    padding: 2rem;
     font-weight: bold;
 
     background: linear-gradient(
@@ -114,4 +118,32 @@ button:hover{
 @keyframes rgb{
     0% { background-position: 0%; }
     100% { background-position: 400%; }
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(page-content) {
+    animation-duration: 1s;
+}
+
+::view-transition-old(page-content) {
+    animation-name: slide-out;
+}
+
+::view-transition-new(page-content) {
+    animation-name: slide-in;
+}
+
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
 }
