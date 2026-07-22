@@ -88,7 +88,8 @@ button:hover{
 }
 
 /*Anim*/
-.rgb{
+.title{
+    margin: 1rem;
     padding: 2rem;
     font-weight: bold;
 
