@@ -61,7 +61,7 @@ button:hover{
 /*Classes*/
 .navBar{
     background-color: #808080;
-    clamp(1rem, 2rem, 4rem)
+    size: (1rem, 2rem, 4rem)
 }
 
 .navBar ul{
